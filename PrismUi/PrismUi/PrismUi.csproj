@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>PrismUi</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Prism.DryIoc" Version="7.2.0.1422" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PrismUi.Core\PrismUi.Core.csproj" />
+    <ProjectReference Include="..\Modules\PrismUi.Modules.ModuleName\PrismUi.Modules.ModuleName.csproj" />
+    <ProjectReference Include="..\Services\PrismUi.Services.Interfaces\PrismUi.Services.Interfaces.csproj" />
+    <ProjectReference Include="..\Services\PrismUi.Services\PrismUi.Services.csproj" />
+  </ItemGroup>
+</Project>
